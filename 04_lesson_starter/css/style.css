@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* If you use the 'width:100vw' to define the width of your page when the content overflow the screen and the vertical scroll bar apper, this will create an annoying horizontal scroll bar, to avoid that just use width:100% which is the default anyway*/
+    width: 100%;
+
+    /* This will make the initial height the full height of the screen used to view the website */
+    min-height: 100vh;
+}
+
+header{
+    width: 50%;
+}
+h1{
+    font-size: 32px;
+    border: 2px dashed red;
+    /* When using % the element is going to take the parent width as its 100% */
+    width: 50%;
+    /* A good use for em units it's for defining padding and margins */
+    padding: 0.5em;
+}
+main{
+    font-size: 40px;
+    width: 25vw;
+    background-color: skyblue;
+}
+p{
+
+    /* The default font size is 16px */
+    
+    /* REM are based on the root font size. 1rem = 1 time the font size  */
+
+    /* EM are based on the font size of the parent element */
+    font-size: 2rem;
+    width: 40ch;
+}
