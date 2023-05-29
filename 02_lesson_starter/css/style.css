@@ -1,0 +1,57 @@
+/* This selector applies properties to every tag in the document */
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 1px solid red; */
+}
+
+html{
+    font-size: 22px;
+}
+
+main {
+    font-family:monospace;
+}
+
+body{
+    /* font-size: 22px; */
+    /* border: 3px solid black; */
+}
+
+h1,h2{
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Classes beat tag hierarchy because they are more specific */
+
+.gray{
+    color: gray;
+}
+
+p{
+    color: pink!important;
+}
+
+/* Last tag selector will be applied because of the cascade hierarchy  */
+
+p{
+    color: red;
+}
+
+/* This properties only apply to 'spans' nested inside a 'p' */
+
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+.highlight{
+    text-transform: uppercase;
+    background-color:gold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#second{
+    font-style: italic;
+}
