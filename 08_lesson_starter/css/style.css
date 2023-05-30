@@ -5,3 +5,30 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
+ol{
+  /* list-style-type: upper-roman; */
+  list-style-type: lower-alpha;
+  /* list-style-type: none; */
+  padding:0;
+}
+ul{
+  color:#00f;
+  text-align: center;
+  list-style-type:square;
+  list-style-position: inside;
+  list-style-image: url("../images/checkmark.png");
+  /* This property let you apply the 3 above in one line */
+  list-style: circle url("../images/checkmark.png") inside;
+  /* list-style-type: square; */
+}
+ul li:nth-child(even){
+  color: red;
+
+}
+ul  li:nth-child(even)::marker{
+  color: black;
+  font-family: cursive;
+  font-size: 1em;
+  content: "Hola mundo >> ";
+
+}
