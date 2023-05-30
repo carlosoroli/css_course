@@ -5,3 +5,34 @@ body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
+main{
+    /* opacity: .5; */
+}
+h1{
+    cursor: not-allowed;
+}
+
+/* a:visited{
+    color: blue;
+} */
+a{
+    /* text-decoration: none; */
+    color: palevioletred;
+
+}
+/* If you put your psudoclass of hover before the visited, your property will be overwrite*/
+a:hover, a:focus{
+    color:pink;
+    color:hsla(340, 57%, 64%, 0.64);
+    font-size: 1.125em;
+    /* background-color: gold; */
+    /* opacity: 0.8; */
+    /* color: purple; */
+}
+a:focus{
+    background-color: gold  ;
+}
+
+a:active{
+    color: red;
+}
